@@ -20,7 +20,7 @@ def submit_form():
                 del data['submit']
             write_to_txt(data)
             write_to_csv(data)
-            return "I'll be in touch soon."
+            return redirect('/thank_you.html#six')
         except:
             return 'did not save to database'
         # return redirect('/thankyou.HTML')
